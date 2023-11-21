@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Vazirmatn', sans-serif;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    gap: 20px;
+}
+
+h1{
+    font-size: 5rem;
+    color: rgba(0,0,0,.87);
+}
+
+button{
+    background: white;
+    box-shadow: #ccc 0 0 3px;
+    border: none;
+    transition: .2s ease-in-out;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+button:hover{
+    cursor: pointer;
+    box-shadow: #ccc 0 0 15px;
+}
+
+#start{
+    width: 150px;
+    height: 80px;
+}
+
+#start:hover{
+    cursor: pointer;
+    box-shadow: #ccc 0 0 15px;
+}
+
+#turn{
+    display: none;
+    align-items: center;
+    gap: 20px;
+}
+
+#turn > img{
+    width: 25%;
+}
+
+#game{
+    display: none;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 10px;
+}
+
+.square{
+    width: 100px;
+    height: 100px;
+    background: white;
+    box-shadow: #ccc 0 0 3px;
+    transition: .2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square:hover{
+    cursor: pointer;
+    box-shadow: #ccc 0 0 15px;
+}
+
+#wins{
+    display: none;
+}
+
+h3{
+    font-size: 2rem;
+}
+
+#popup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 200px;
+    background: rgba(255,255,255,0.87);
+    box-shadow: #ccc 0 0 3px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    z-index: 100;
+}
+
+#popup > button{
+    width: 150px;
+    height: 60px;
+}
+
+#hover{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    z-index: 50;
+    background: rgba(0,0,0,0);
+}

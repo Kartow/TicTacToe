@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+    <main>
+        <h1>Tic-Tac-Toe</h1>
+        <div id="turn">
+            <h2>Turn:</h2>
+            <img src="circle.png">
+        </div>
+        <div>
+            <button onclick="startGame()" id="start">Play</button>
+        </div>
+        <div id="game">
+            <div class="square" id="s1" checked="empty" onclick="check(this.id)"><img src=""></div>
+            <div class="square" id="s2" checked="empty" onclick="check(this.id)"><img src=""></div>
+            <div class="square" id="s3" checked="empty" onclick="check(this.id)"><img src=""></div>
+            <div class="square" id="s4" checked="empty" onclick="check(this.id)"><img src=""></div>
+            <div class="square" id="s5" checked="empty" onclick="check(this.id)"><img src=""></div>
+            <div class="square" id="s6" checked="empty" onclick="check(this.id)"><img src=""></div>
+            <div class="square" id="s7" checked="empty" onclick="check(this.id)"><img src=""></div>
+            <div class="square" id="s8" checked="empty" onclick="check(this.id)"><img src=""></div>
+            <div class="square" id="s9" checked="empty" onclick="check(this.id)"><img src=""></div>
+        </div>
+
+        <div id="wins">
+            <p>Circle wins: 0</p>
+            <p>Cross wins: 0</p>
+        </div>
+
+        <div id="popup">
+            <h3></h3>
+            <button onclick="startGame()">Play Again</button>
+            <button onclick="resetWins()">Reset Wins</button>
+        </div>
+        <div id="hover"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
