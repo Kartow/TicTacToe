@@ -93,5 +93,4 @@ function resetWins(){
     document.getElementById('wins').children[0].innerHTML = `Circle wins: ${circleWins}`;
     document.getElementById('wins').children[1].innerHTML = `Cross wins: ${crossWins}`;
     document.getElementById('wins').children[2].innerHTML = `Draws: ${draws}`;
-    startGame();
 }
